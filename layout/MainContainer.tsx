@@ -15,9 +15,9 @@ const MainContainer: React.FC = ({children}) => {
                <Link href="/">
                   <a>Main</a>
                </Link>
-               {/*<Link href="/posts/new">
+               <Link href="/posts/newPost">
                   <a>New post</a>
-               </Link>*/}
+               </Link>
             </nav>
          </header>
 

@@ -1,6 +1,5 @@
 export interface stateType {
    posts: postType[],
-   selectedPost?: postType,
 }
 export interface postType {
    id: number,
@@ -32,21 +31,6 @@ interface RequestPostsAction {
    type: PostActionsTypes.REQUEST_POSTS,
    posts: postType[]
 }
-interface RequestAPostAction {
-   type: PostActionsTypes.SELECT_A_POST,
-   post: postType
-}
-interface CreatePostAction {
-   type: PostActionsTypes.CREATE_POST,
-   post: newPost
-}
-interface DeletePostAction {
-   type: PostActionsTypes.DELETE_POST,
-   id: number
-}
 
-export type ActionsTypes =
-   RequestPostsAction
-   | RequestAPostAction
-   | CreatePostAction
-   | DeletePostAction
+export type ActionsTypes = RequestPostsAction
+
